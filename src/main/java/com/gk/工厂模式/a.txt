@@ -1,0 +1,13 @@
+工厂模式代码测试：
+工厂模式，创建型模式，更适合对复杂对象的创建使用工厂，简单只通过new就能创建的不适合使用工厂。
+
+Shape接口
+实现了Shape接口的Circle和Square类
+ShapeFactory工厂类创建Shape实例
+
+
+ShapeFactory创建实例的两种方式：
+
+1. 传入参数，返回new实例，缺点，每次新增Shape实现类需要修改此方法
+
+2. 传入参数为泛型class，通过反射创建实例
