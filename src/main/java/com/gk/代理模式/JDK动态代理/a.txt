@@ -1,0 +1,1 @@
+jdk动态代理参考：https://www.cnblogs.com/MOBIN/p/5597215.html
