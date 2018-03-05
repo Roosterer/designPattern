@@ -52,6 +52,11 @@ public class TestClassLoad {
         URLClassLoader urlClassLoader = new URLClassLoader(new URL[]{});
         //SecureClassLoader实现类加载时的安全校验，可以间接知道AppClassLoader,ExtClassLoader也都间接
         //继承了SecureClassLoader
+
+        //四、加载类时的内部调用逻辑
+        System.out.println("====================");
+        Class c = classLoader.loadClass("java.lang.String");
+        System.out.println(c);
     }
 
 }
