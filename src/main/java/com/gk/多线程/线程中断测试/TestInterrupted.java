@@ -10,6 +10,8 @@ public class TestInterrupted {
         public void run() {
             while(true){
                 try {
+                    /*这个判断不会成立，因为当此线程收到中断会走catch代码块，而一旦走到catch块，isInterrupted()
+                    * 会被置为false*/
                     if(currentThread().isInterrupted()){
                         System.out.println("is interrupted");
                     }else{
