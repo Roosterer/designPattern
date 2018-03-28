@@ -23,6 +23,7 @@ public class TestHashMap {
 
         //删除元素
         hashMap.remove("key");
+        System.out.println("hello get key");
 
 
 
