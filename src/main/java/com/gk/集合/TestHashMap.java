@@ -17,8 +17,8 @@ public class TestHashMap {
         //增加元素
         hashMap.put("key","value");
         hashMap.put("key1","value1");
-
         //获取元素
+        hashMap.get("key");
         hashMap.get("key");
 
         //删除元素
